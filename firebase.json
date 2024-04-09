@@ -5,6 +5,7 @@
   },
   "hosting": {
     "public": "dist/apps/web",
+    "site": "helldiverscompanion",
     "ignore": [
       "firebase.json",
       "**/.*",
