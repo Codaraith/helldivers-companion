@@ -1,0 +1,26 @@
+{
+  "firestore": {
+    "rules": "config/firebase.rules",
+    "indexes": "config/firebase.indexes.json"
+  },
+  "hosting": {
+    "public": "dist/apps/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "config/storage.rules"
+  },
+  "remoteconfig": {
+    "template": "config/remoteconfig.template.json"
+  }
+}
